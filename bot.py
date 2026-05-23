@@ -4,7 +4,7 @@ import os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, CommandHandler, ContextTypes, filters
 
-TELEGRAM_TOKEN = os.getenv("8851255730:AAG3Tfk_lZHiAb5oKPkUiTwHN-DVFHsHg6w")
+TELEGRAM_TOKEN = os.getenv("8851255730:AAGAdcNqzuIgTFJa96RuBRyYNvbXi5BmwNs")
 GEMINI_API_KEY = os.getenv("AIzaSyD531RXj134QhsO8ceTiZh6YWrl74NQkIk")
 
 logging.basicConfig(level=logging.INFO)
