@@ -1,11 +1,12 @@
 import logging
+import logging
 import requests
+import os
 from telegram import Update
 from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
 
-TELEGRAM_TOKEN = "8851255730:AAG3Tfk_lZHiAb5oKPkUiTwHN-DVFHsHg6w"
-GEMINI_API_KEY = "AIzaSyD531RXj134QhsO8ceTiZh6YWrl74NQkIk"
-
+TELEGRAM_TOKEN = os.getenv("8851255730:AAG3Tfk_lZHiAb5oKPkUiTwHN-DVFHsHg6w")
+GEMINI_API_KEY = os.getenv("AIzaSyD531RXj134QhsO8ceTiZh6YWrl74NQkIk")
 logging.basicConfig(level=logging.INFO)
 
 def get_movie_info(movie_name):
