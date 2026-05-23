@@ -7,6 +7,7 @@ from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
 
 TELEGRAM_TOKEN = os.getenv("8851255730:AAG3Tfk_lZHiAb5oKPkUiTwHN-DVFHsHg6w")
 GEMINI_API_KEY = os.getenv("AIzaSyD531RXj134QhsO8ceTiZh6YWrl74NQkIk")
+
 logging.basicConfig(level=logging.INFO)
 
 def get_movie_info(movie_name):
